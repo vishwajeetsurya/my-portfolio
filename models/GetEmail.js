@@ -1,5 +1,3 @@
-// models/getemail.js
-
 const mongoose = require('mongoose');
 
 const getEmailSchema = new mongoose.Schema({
@@ -18,6 +16,6 @@ const getEmailSchema = new mongoose.Schema({
     },
 });
 
-const GetEmail = mongoose.model('GetEmail', getEmailSchema);
+const GetEmail = mongoose.model('GetEmail', getEmailSchema)
 
 module.exports = GetEmail

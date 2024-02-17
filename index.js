@@ -10,7 +10,7 @@ require("dotenv").config({ path: "./.env" })
 mongoose.connect(process.env.MONGO_URL)
 const app = express();
 app.use(express.json())
-app.use(express.static(path.join(__dirname, "dist", "dist")))
+app.use(express.static(path.join(__dirname, "dist")))
 
 app.use(cors())
 const PORT = process.env.PORT || 5000;
